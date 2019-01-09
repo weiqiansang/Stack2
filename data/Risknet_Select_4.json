@@ -1,0 +1,472 @@
+{
+ "IRLSummary": [
+ {
+   "Review_Period": "2015Q1",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "31-Dec-15",
+   "Num_of_Counterparties": "1709",
+   "Adjusted": "39",
+   "Status": "Approved",
+   "id": "1"
+ },
+ {
+   "Review_Period": "",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "30-Sep-18",
+   "Num_of_Counterparties": "1716",
+   "Adjusted": "16",
+   "Status": "Unassigned",
+   "id": "2"
+ },
+ {
+   "Review_Period": "",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "30-Jun-18",
+   "Num_of_Counterparties": "1727",
+   "Adjusted": "14",
+   "Status": "Unassigned",
+   "id": "3"
+ },
+ {
+   "Review_Period": "2018Q1",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "31-Mar-18",
+   "Num_of_Counterparties": "1727",
+   "Adjusted": "11",
+   "Status": "Approved",
+   "id": "4"
+ },
+ {
+   "Review_Period": "",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "30-Sep-17",
+   "Num_of_Counterparties": "1751",
+   "Adjusted": "8",
+   "Status": "Unassigned",
+   "id": "5"
+ },
+ {
+   "Review_Period": "2017Q2",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "30-Jun-17",
+   "Num_of_Counterparties": "1751",
+   "Adjusted": "11",
+   "Status": "Approved",
+   "id": "6"
+ },
+ {
+   "Review_Period": "2017Q1",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "31-Mar-17",
+   "Num_of_Counterparties": "1759",
+   "Adjusted": "15",
+   "Status": "Approved",
+   "id": "7"
+ },
+ {
+   "Review_Period": "2016Q4",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "31-Dec-16",
+   "Num_of_Counterparties": "1765",
+   "Adjusted": "24",
+   "Status": "Approved",
+   "id": "8"
+ },
+ {
+   "Review_Period": "2016Q3",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "30-Sep-16",
+   "Num_of_Counterparties": "1777",
+   "Adjusted": "47",
+   "Status": "Approved",
+   "id": "9"
+ },
+ {
+   "Review_Period": "2016Q2",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "30-Jun-16",
+   "Num_of_Counterparties": "1788",
+   "Adjusted": "25",
+   "Status": "Approved",
+   "id": "10"
+ },
+ {
+   "Review_Period": "2016Q1",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "31-Mar-16",
+   "Num_of_Counterparties": "1802",
+   "Adjusted": "23",
+   "Status": "Approved",
+   "id": "11"
+ },
+ {
+   "Review_Period": "2015Q3",
+   "Sector": "U.S. Bank Scorecard",
+   "Financials_As_Of_Date": "30-Sep-15",
+   "Num_of_Counterparties": "1813",
+   "Adjusted": "60",
+   "Status": "Approved",
+   "id": "12"
+ },
+ {
+   "Review_Period": "2016",
+   "Sector": "Broker Dealer",
+   "Financials_As_Of_Date": "30-Sep-16",
+   "Num_of_Counterparties": "2",
+   "Adjusted": "1",
+   "Status": "Approved",
+   "id": "13"
+ },
+ {
+   "Review_Period": "2018Q2",
+   "Sector": "U.S. Bank Holding Company Scorecard",
+   "Financials_As_Of_Date": "30-Jun-18",
+   "Num_of_Counterparties": "235",
+   "Adjusted": "1",
+   "Status": "Approved",
+   "id": "14"
+ },
+ {
+   "Review_Period": "2015Q3",
+   "Sector": "U.S. Bank Holding Company Scorecard",
+   "Financials_As_Of_Date": "30-Sep-15",
+   "Num_of_Counterparties": "237",
+   "Adjusted": "18",
+   "Status": "Approved",
+   "id": "15"
+ },
+ {
+   "Review_Period": "2016Q3",
+   "Sector": "U.S. Bank Holding Company Scorecard",
+   "Financials_As_Of_Date": "30-Sep-16",
+   "Num_of_Counterparties": "239",
+   "Adjusted": "5",
+   "Status": "Approved",
+   "id": "16"
+ },
+ {
+   "Review_Period": "2016Q1",
+   "Sector": "U.S. Bank Holding Company Scorecard",
+   "Financials_As_Of_Date": "31-Mar-16",
+   "Num_of_Counterparties": "243",
+   "Adjusted": "3",
+   "Status": "Approved",
+   "id": "17"
+ },
+ {
+   "Review_Period": "2016Q4",
+   "Sector": "U.S. Bank Holding Company Scorecard",
+   "Financials_As_Of_Date": "31-Dec-16",
+   "Num_of_Counterparties": "244",
+   "Adjusted": "5",
+   "Status": "Approved",
+   "id": "18"
+ },
+ {
+   "Review_Period": "2015Q4",
+   "Sector": "U.S. Bank Holding Company Scorecard",
+   "Financials_As_Of_Date": "31-Dec-15",
+   "Num_of_Counterparties": "248",
+   "Adjusted": "12",
+   "Status": "Approved",
+   "id": "19"
+ },
+ {
+   "Review_Period": "2016Q4",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "31-Dec-16",
+   "Num_of_Counterparties": "26",
+   "Adjusted": "6",
+   "Status": "Approved",
+   "id": "20"
+ },
+ {
+   "Review_Period": "2016Q2",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "30-Jun-16",
+   "Num_of_Counterparties": "28",
+   "Adjusted": "5",
+   "Status": "Approved",
+   "id": "21"
+ },
+ {
+   "Review_Period": "2016",
+   "Sector": "Broker Dealer",
+   "Financials_As_Of_Date": "31-Mar-16",
+   "Num_of_Counterparties": "3",
+   "Adjusted": "2",
+   "Status": "Approved",
+   "id": "22"
+ },
+ {
+   "Review_Period": "2014",
+   "Sector": "Broker Dealer",
+   "Financials_As_Of_Date": "31-Dec-14",
+   "Num_of_Counterparties": "3",
+   "Adjusted": "3",
+   "Status": "Assigned",
+   "id": "23"
+ },
+ {
+   "Review_Period": "2016Q3",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "30-Sep-16",
+   "Num_of_Counterparties": "34",
+   "Adjusted": "3",
+   "Status": "Approved",
+   "id": "24"
+ },
+ {
+   "Review_Period": "2016Q1",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "31-Mar-16",
+   "Num_of_Counterparties": "559",
+   "Adjusted": "145",
+   "Status": "Approved",
+   "id": "25"
+ },
+ {
+   "Review_Period": "2015Q4",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "31-Dec-15",
+   "Num_of_Counterparties": "560",
+   "Adjusted": "202",
+   "Status": "Approved",
+   "id": "26"
+ },
+ {
+   "Review_Period": "2016Q2",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "30-Jun-16",
+   "Num_of_Counterparties": "567",
+   "Adjusted": "129",
+   "Status": "Approved",
+   "id": "27"
+ },
+ {
+   "Review_Period": "2017Q1",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "31-Mar-17",
+   "Num_of_Counterparties": "568",
+   "Adjusted": "111",
+   "Status": "Approved",
+   "id": "28"
+ },
+ {
+   "Review_Period": "2016Q3",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "30-Sep-16",
+   "Num_of_Counterparties": "568",
+   "Adjusted": "114",
+   "Status": "Approved",
+   "id": "29"
+ },
+ {
+   "Review_Period": "2016Q4",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "31-Dec-16",
+   "Num_of_Counterparties": "571",
+   "Adjusted": "112",
+   "Status": "Approved",
+   "id": "30"
+ },
+ {
+   "Review_Period": "2018Q2",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "30-Jun-18",
+   "Num_of_Counterparties": "576",
+   "Adjusted": "84",
+   "Status": "Approved",
+   "id": "31"
+ },
+ {
+   "Review_Period": "2017Q2",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "30-Jun-17",
+   "Num_of_Counterparties": "579",
+   "Adjusted": "106",
+   "Status": "Approved",
+   "id": "32"
+ },
+ {
+   "Review_Period": "2018Q3",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "30-Sep-18",
+   "Num_of_Counterparties": "580",
+   "Adjusted": "98",
+   "Status": "Approved",
+   "id": "33"
+ },
+ {
+   "Review_Period": "2018Q1",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "31-Mar-18",
+   "Num_of_Counterparties": "582",
+   "Adjusted": "112",
+   "Status": "Approved",
+   "id": "34"
+ },
+ {
+   "Review_Period": "2015Q2",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "30-Jun-15",
+   "Num_of_Counterparties": "582",
+   "Adjusted": "526",
+   "Status": "Approved",
+   "id": "35"
+ },
+ {
+   "Review_Period": "2017Q4",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "31-Dec-17",
+   "Num_of_Counterparties": "586",
+   "Adjusted": "126",
+   "Status": "Approved",
+   "id": "36"
+ },
+ {
+   "Review_Period": "2017Q3",
+   "Sector": "Mortgage Bank",
+   "Financials_As_Of_Date": "30-Sep-17",
+   "Num_of_Counterparties": "589",
+   "Adjusted": "129",
+   "Status": "Approved",
+   "id": "37"
+ },
+ {
+   "Review_Period": "2017",
+   "Sector": "Broker Dealer",
+   "Financials_As_Of_Date": "31-Dec-17",
+   "Num_of_Counterparties": "62",
+   "Adjusted": "10",
+   "Status": "Approved",
+   "id": "38"
+ },
+ {
+   "Review_Period": "2015Q3",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "30-Sep-15",
+   "Num_of_Counterparties": "623",
+   "Adjusted": "5",
+   "Status": "Approved",
+   "id": "39"
+ },
+ {
+   "Review_Period": "2015Q4",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "31-Dec-15",
+   "Num_of_Counterparties": "625",
+   "Adjusted": "5",
+   "Status": "Approved",
+   "id": "40"
+ },
+ {
+   "Review_Period": "2016Q1",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "31-Mar-16",
+   "Num_of_Counterparties": "628",
+   "Adjusted": "4",
+   "Status": "Approved",
+   "id": "41"
+ },
+ {
+   "Review_Period": "2016Q4",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "31-Dec-16",
+   "Num_of_Counterparties": "629",
+   "Adjusted": "2",
+   "Status": "Approved",
+   "id": "42"
+ },
+ {
+   "Review_Period": "2016Q2",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "30-Jun-16",
+   "Num_of_Counterparties": "636",
+   "Adjusted": "4",
+   "Status": "Approved",
+   "id": "43"
+ },
+ {
+   "Review_Period": "2016Q3",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "30-Sep-16",
+   "Num_of_Counterparties": "641",
+   "Adjusted": "2",
+   "Status": "Approved",
+   "id": "44"
+ },
+ {
+   "Review_Period": "2017Q1",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "31-Mar-17",
+   "Num_of_Counterparties": "643",
+   "Adjusted": "5",
+   "Status": "Approved",
+   "id": "45"
+ },
+ {
+   "Review_Period": "2016",
+   "Sector": "Broker Dealer",
+   "Financials_As_Of_Date": "31-Dec-16",
+   "Num_of_Counterparties": "65",
+   "Adjusted": "20",
+   "Status": "Approved",
+   "id": "46"
+ },
+ {
+   "Review_Period": "2017Q4",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "31-Dec-17",
+   "Num_of_Counterparties": "650",
+   "Adjusted": "2",
+   "Status": "Approved",
+   "id": "47"
+ },
+ {
+   "Review_Period": "2017Q3",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "30-Sep-17",
+   "Num_of_Counterparties": "650",
+   "Adjusted": "2",
+   "Status": "Approved",
+   "id": "48"
+ },
+ {
+   "Review_Period": "2018Q1",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "31-Mar-18",
+   "Num_of_Counterparties": "655",
+   "Adjusted": "1",
+   "Status": "Approved",
+   "id": "49"
+ },
+ {
+   "Review_Period": "2018Q2",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "30-Jun-18",
+   "Num_of_Counterparties": "657",
+   "Adjusted": "9",
+   "Status": "Approved",
+   "id": "50"
+ },
+ {
+   "Review_Period": "2018Q3",
+   "Sector": "Credit Union",
+   "Financials_As_Of_Date": "30-Sep-18",
+   "Num_of_Counterparties": "662",
+   "Adjusted": "7",
+   "Status": "Approved",
+   "id": "51"
+ },
+ {
+   "Review_Period": "2015",
+   "Sector": "Broker Dealer",
+   "Financials_As_Of_Date": "31-Dec-15",
+   "Num_of_Counterparties": "69",
+   "Adjusted": "39",
+   "Status": "Approved",
+   "id": "52"
+ }
+]
+}

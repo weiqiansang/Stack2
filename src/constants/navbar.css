@@ -1,0 +1,73 @@
+/* Style the navbar */
+.navbar {
+    width:100%;
+    float: left;
+    margin:0px auto;
+    left:0;
+    right:0;
+/*    color: #61dafb;*/
+    padding:0;
+    background-color: aliceblue;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar-left {
+    float: left !important;
+}
+
+.navbar.navbar-fixed-top{
+    width:100%;
+    margin:0px auto;
+    left:0;
+    right:0;
+    padding:0;
+/*    background-color: lightblue;*/
+    color: #333333;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: #99999;
+    text-align: -webkit-left;
+    padding: 14px;
+    text-decoration: none;
+}
+
+/* Page content */
+.content {
+    padding: 2px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 2px;
+}
+
+.navbar ul {
+    list-style: none;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0; }
+.navbar li {
+    float: left; }
+.navbar li a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #069;
+    border-right: 1px solid #ccc; }
+.navbar li:first-child a {
+    border-left: 1px solid #ccc; }
+.navbar li a:hover {
+    color: #c00;
+    background-color: #fff; }

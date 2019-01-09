@@ -1,0 +1,32 @@
+.container{
+    padding:0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100% !important;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.navbar-wrapper .navbar {
+    width: 100% !important;
+}
+
+.navbar-wrapper .navbar .dropdown-menu {
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}

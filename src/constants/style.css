@@ -1,0 +1,491 @@
+.bodyStyle{
+
+	background-color:#FFFFFF;
+	color:#000000;
+	margin-width:0px;
+	margin-height:0px;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+.normalfont{
+	font-family: verdana, arial;
+	font-size:11px;
+	font-weight:normal;
+	padding:18;
+	color:#5A666C;
+}
+
+.readonly{
+
+	BACKGROUND-COLOR: #EAEAEA;
+}
+
+input,textarea,option,select
+{
+	BACKGROUND-COLOR: #FFFFFF;
+	BORDER-BOTTOM: #2C66BA 1px solid;
+	BORDER-LEFT: #2C66BA 1px solid;
+	BORDER-RIGHT: #2C66BA 1px solid;
+	BORDER-TOP: #2C66BA 1px solid;
+	COLOR: #000000;
+	FONT-FAMILY: Arial;
+	FONT-SIZE: 12px;
+	TEXT-DECORATION: none;
+}
+
+.commentdiv
+{
+   overflow:auto;
+   height:100;
+   width:100%;
+  	BORDER-BOTTOM: #2C66BA 1px solid;
+  	BORDER-LEFT: #2C66BA 1px solid;
+  	BORDER-RIGHT: #2C66BA 1px solid;
+  	BORDER-TOP: #2C66BA 1px solid;
+   BACKGROUND-COLOR: #EAEAEA;
+}
+
+.noborder
+{
+  BORDER-BOTTOM: 0px ;
+  BORDER-LEFT:  0px ;
+  BORDER-RIGHT: 0px ;
+  BORDER-TOP: 0px;
+}
+
+.PAGETEXT
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+
+}
+
+.HELPTEXT
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+    FONT_STYLE: italic;
+
+}
+
+.OldActionButton
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px;
+    CURSOR: hand;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+   BORDER-BOTTOM: #2C66BA 1px solid;
+  	BORDER-LEFT: #2C66BA 1px solid;
+  	BORDER-RIGHT: #2C66BA 1px solid;
+  	BORDER-TOP: #2C66BA 1px solid;
+    BACKGROUND-COLOR: lightsteelblue;
+}
+
+.ActionButton {
+  font-size: 12px;
+  border-color: #FFFFFF #2C66BA #2C66BA #FFFFFF;
+  background-color: lightsteelblue;
+  border-style: solid;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  CURSOR: hand;
+  COLOR: black;
+  FONT-FAMILY: Arial;
+}
+
+.PAGEHEADING
+{
+   FONT-WEIGHT: bold;
+   FONT-SIZE: 14px;
+   COLOR: steelblue;
+   FONT-FAMILY: Arial;
+   TEXT-DECORATION: none;
+}
+
+.menuSub
+{
+    BACKGROUND-COLOR: white;
+    FONT-FAMILY: Arial;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: black;
+    CURSOR: hand1;
+}
+
+.menuSelected
+{
+  BACKGROUND-COLOR: #FEB66D;
+  FONT-FAMILY: Arial;
+  FONT-WEIGHT: bold;
+  FONT-SIZE: 10px;
+  COLOR: white;
+}
+
+.menuIN
+{
+  BACKGROUND-COLOR: #FEB66D;
+  FONT-FAMILY: Arial;
+  FONT-WEIGHT: bold;
+  FONT-SIZE: 10px;
+  TEXT-DECORATION: none;
+  COLOR: white;
+}
+
+.menuMain
+{
+    BACKGROUND-COLOR: #2C66BA;
+    FONT-FAMILY: Arial;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: white;
+}
+
+A:link
+{
+  TEXT-DECORATION: none;
+  COLOR: blue;
+}
+
+A:visited
+{
+   TEXT-DECORATION: none;
+   COLOR: blue;
+}
+
+A:hover
+{
+  COLOR: blue;
+}
+
+.FormBorder
+{
+    BACKGROUND-COLOR: steelblue;
+}
+
+.FormStyle
+{
+  FONT-WEIGHT: normal;
+  FONT-SIZE: 12px;
+  COLOR: black;
+  FONT-FAMILY: Arial;
+  BACKGROUND-COLOR: white;
+}
+
+.ReportFormStyle
+{
+  FONT-WEIGHT: normal;
+  FONT-SIZE: 12px;
+  COLOR: black;
+  FONT-FAMILY: Arial;
+  BACKGROUND-COLOR: #EAEAEA;
+}
+
+HR
+{
+    COLOR: steelblue;
+}
+
+.InfoText
+{
+	COLOR: #2C66BA;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 11px;
+}
+
+.TITLE
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 18pt;
+    COLOR: #E76C32;
+    FONT-FAMILY: Times New Roman;
+
+}
+
+.subheading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15px;
+    COLOR: black;
+    FONT-FAMILY: Times New Roman;
+
+}
+
+.collapseData
+{
+    BACKGROUND-COLOR: #FFFFB7;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9px;
+    COLOR: black;
+    FONT-FAMILY: Verdana;
+
+}
+
+.collapseDataFont
+{
+    BACKGROUND-COLOR: #FFFFFF;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9px;
+    COLOR: black;
+    FONT-FAMILY: Verdana;
+
+}
+
+.altRowStyle
+{
+    BACKGROUND-COLOR: #FFFFE1;
+}
+
+.loginText
+{
+  FONT-FAMILY: Verdana;
+  color:#000066;
+  FONT-SIZE: 11px;
+}
+
+.reqField
+{
+  FONT-FAMILY: Arial;
+  color:red;
+  FONT-SIZE: 12px;
+}
+
+.FOOTERTEXT
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px;
+    COLOR: white;
+    FONT-FAMILY: Arial;
+
+}
+
+.FOOTERHEADING
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: white;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #2C66BA;
+}
+
+.tableFieldTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: black;
+    FONT-FAMILY: Arial;
+
+}
+
+TR.headerTr
+{
+    FONT-SIZE: 10pt;
+    COLOR: #a52a2a;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #add8e6;
+}
+
+TABLE.resultTable
+{
+    FONT-WEIGHT: normal;
+  	FONT-SIZE: 12px;
+  	COLOR: black;
+  	FONT-FAMILY: Arial;
+  	BACKGROUND-COLOR: white;
+    BORDER-RIGHT: #4682b4 1pt solid;
+    BORDER-TOP: #4682b4 1pt solid;
+    BORDER-LEFT: #4682b4 1pt solid;
+    BORDER-BOTTOM: #4682b4 1pt solid;
+}
+
+TD.tdLabel
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000080;
+    FONT-FAMILY: Arial;
+}
+
+A.link1
+{
+	FONT-SIZE: 10pt;
+	COLOR: #0000ff;
+	FONT-FAMILY: Arial;
+	TEXT-DECORATION: underline;
+}
+
+A.link1:hover
+{
+	FONT-SIZE: 10pt;
+	COLOR: #ff0000;
+	FONT-FAMILY: Arial;
+	TEXT-DECORATION: none;
+}
+
+TD.tdBorder
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: Arial;
+    BORDER-BOTTOM: #2C66BA 1px solid;
+  	BORDER-LEFT: #2C66BA 1px solid;
+  	BORDER-RIGHT: #2C66BA 1px solid;
+  	BORDER-TOP: #2C66BA 1px solid;
+}
+
+TD.errorTd
+{
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: 10pt;
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial
+}
+
+/* ==========Style start for scrolling hearder in a tabe========== */
+	/* begin some basic styling here*/
+	body {
+		background: #FFF;
+		color: #000;
+		font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+		margin: 1px;
+		padding: 0
+	}
+
+	table, td, a {
+		color: #000;
+		font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif
+	}
+	/* end basic styling*/
+
+	/* define height and width of scrollable area. Add 16px to width for scrollbar          */
+	div.tableContainer {
+		clear: both;
+		border: 1px normal #4682b4;
+		height: 175px;
+		overflow: auto;
+		width: 100%
+	}
+
+	/* define height and width of scrollable area. Add 16px to width for scrollbar          */
+	div.tableContainer1 {
+		clear: both;
+		border: 1px normal #4682b4;
+		height: 95px;
+		overflow: auto;
+		width: 100%
+	}
+
+	/* Reset overflow value to hidden for all non-IE browsers. */
+	html>body div.tableContainer {
+		overflow: hidden;
+		width: 100%
+	}
+
+	/* Reset overflow value to hidden for all non-IE browsers. */
+	html>body div.tableContainer1 {
+		overflow: hidden;
+		width: 100%
+	}
+
+	/* define width of table. IE browsers only                 */
+	div.tableContainer table {
+		float: left;
+		width: 96%
+	}
+
+	/* define width of table. IE browsers only                 */
+	div.tableContainer1 table {
+		float: left;
+		width: 96%
+	}
+
+	/* define width of table. Add 16px to width for scrollbar.           */
+	/* All other non-IE browsers.                                        */
+	html>body div.tableContainer table {
+		width: 100%
+	}
+
+	/* define width of table. Add 16px to width for scrollbar.           */
+	/* All other non-IE browsers.                                        */
+	html>body div.tableContainer1 table {
+		width: 100%
+	}
+
+	/* set table header to a fixed position. WinIE 6.x only                                       */
+	/* In WinIE 6.x, any element with a position property set to relative and is a child of       */
+	/* an element that has an overflow property set, the relative value translates into fixed.    */
+	/* Ex: parent element DIV with a class of tableContainer has an overflow property set to auto */
+	thead.fixedHeader tr {
+		position: relative
+	}
+
+	/* set THEAD element to have block level attributes. All other non-IE browsers            */
+	/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+	html>body thead.fixedHeader tr {
+		display: block
+	}
+
+	/* make the TH elements pretty */
+	thead.fixedHeader th {
+		background: #add8e6;
+		border-left: 1px solid #add8e6;
+		border-right: 1px solid #add8e6;
+		border-top: 1px solid #add8e6;
+		font-weight: normal;
+		text-align: left
+	}
+
+	/* make the A elements pretty. makes for nice clickable headers                */
+	thead.fixedHeader a, thead.fixedHeader a:link, thead.fixedHeader a:visited {
+		color: #FFF;
+		display: block;
+		text-decoration: none;
+		width: 100%
+	}
+
+	/* make the A elements pretty. makes for nice clickable headers                */
+	/* WARNING: swapping the background on hover may cause problems in WinIE 6.x   */
+	thead.fixedHeader a:hover {
+		color: #FFF;
+		display: block;
+		text-decoration: underline;
+		width: 100%
+	}
+
+	/* define the table content to be scrollable                                              */
+	/* set TBODY element to have block level attributes. All other non-IE browsers            */
+	/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+	/* induced side effect is that child TDs no longer accept width: auto                     */
+	html>body tbody.scrollContent {
+		display: block;
+		height: 175px;
+		overflow: auto;
+		width: 100%
+	}
+
+	/* make TD elements pretty. Provide alternating classes for striping the table */
+	/* http://www.alistapart.com/articles/zebratables/                             */
+	tbody.scrollContent td, tbody.scrollContent tr.normalRow td {
+		background: #FFF;
+		border-bottom: none;
+		border-left: none;
+		border-right: 1pt solid #CCC;
+		border-top: 1pt solid #DDD;
+	}
+
+	tbody.scrollContent tr.alternateRow td {
+		background: #EEE;
+		border-bottom: none;
+		border-left: none;
+		border-right: 1pt solid #CCC;
+		border-top: 1pt solid #DDD;
+	}
+
+
+/* ==========Style end for scrolling hearder in a tabe========== */

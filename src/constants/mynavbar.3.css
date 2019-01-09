@@ -1,0 +1,29 @@
+#mynar-dropdown{
+    color: yellow;
+    font-weight: bold;
+    background-color: red;
+}
+#mynar-top-menu{
+    color: blue;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    min-height:20px;
+    height: 20px;
+}
+
+
+#mynar-navbar-right{
+    color: blue;
+    font-weight: bold;
+    background-color: #F5F5F5;
+    min-height:20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#mynar-navbar{
+    color: blue;
+    font-weight: bold;
+    background-color: #F5F5F5;
+}
+
