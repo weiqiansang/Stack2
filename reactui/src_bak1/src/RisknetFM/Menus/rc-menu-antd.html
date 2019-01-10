@@ -1,0 +1,296 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0040)http://localhost:8010/examples/antd.html -->
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+     
+<META charset="utf-8">     
+<META name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"> 
+    
+<META http-equiv="X-UA-Compatible" content="IE=edge">     
+<TITLE>rc-menu-antd</TITLE>     <LINK href="rc-menu-antd_files/normalize.css" 
+rel="stylesheet" type="text/css">     
+<SCRIPT src="rc-menu-antd_files/es6-shim.js"></SCRIPT>
+     
+<SCRIPT src="rc-menu-antd_files/es6-sham.js"></SCRIPT>
+     
+<SCRIPT src="rc-menu-antd_files/es5-shim.js"></SCRIPT>
+     
+<SCRIPT src="rc-menu-antd_files/es5-sham.js"></SCRIPT>
+     
+<SCRIPT src="rc-menu-antd_files/index.js"></SCRIPT>
+     
+<SCRIPT src="rc-menu-antd_files/modernizr.js"></SCRIPT>
+     
+<SCRIPT src="rc-menu-antd_files/qrcode.js"></SCRIPT>
+     
+<SCRIPT src="rc-menu-antd_files/fastclick.js"></SCRIPT>
+     <LINK href="rc-menu-antd_files/github.css" rel="stylesheet" 
+type="text/css">         <LINK href="rc-menu-antd_files/antd.css" rel="stylesheet" 
+type="text/css">         
+<SCRIPT>
+    if(!window.Promise) {
+      document.writeln('<script src="/node_modules\es6-promise/dist/es6-promise.js"'+'>'+'<'+'/'+'script>');
+    }
+    </SCRIPT>
+     
+<STYLE>
+        .highlight {
+            background-color: transparent;
+            padding-top: 1px;
+            position: relative;
+        }
+
+        .highlight pre {
+            font-family: Consolas, "Liberation Mono", Courier, monospace;
+            margin: 6px 0;
+            border: 1px solid #eee;
+            padding: 6px 10px;
+            overflow: auto;
+            border-radius: 2px;
+            background-color: #f8f8f9;
+            line-height: 19px;
+            font-size: 13px;
+            white-space: pre;
+        }
+
+        .highlight pre code {
+            color: #5D6A6A;
+            background-color: transparent;
+            margin: auto;
+            padding: 0;
+        }
+    </STYLE>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18978"></HEAD> 
+<BODY>
+<H1>rc-menu@7.4.20</H1>
+<DIV id="__react-content"></DIV>
+<DIV id="qrcode"></DIV>
+<SCRIPT>
+    document.getElementById("qrcode").appendChild(new QRCode({text: location.protocol + '//10.146.80.210:8010/examples/antd.html'}));
+</SCRIPT>
+ 
+<DIV class="highlight">
+<PRE><CODE><SPAN class="xml">/* eslint no-console:0 */
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+import Menu, { SubMenu, Item as MenuItem, Divider } from 'rc-menu';
+import 'rc-menu/assets/index.less';
+import animate from 'css-animation';
+
+function handleClick(info) {
+  console.log(`clicked ${info.key}`);
+  console.log(info);
+}
+
+const animation = {
+  enter(node, done) {
+    let height;
+    return animate(node, 'rc-menu-collapse', {
+      start() {
+        height = node.offsetHeight;
+        node.style.height = 0;
+      },
+      active() {
+        node.style.height = `${height}px`;
+      },
+      end() {
+        node.style.height = '';
+        done();
+      },
+    });
+  },
+
+  appear() {
+    return this.enter.apply(this, arguments);
+  },
+
+  leave(node, done) {
+    return animate(node, 'rc-menu-collapse', {
+      start() {
+        node.style.height = `${node.offsetHeight}px`;
+      },
+      active() {
+        node.style.height = 0;
+      },
+      end() {
+        node.style.height = '';
+        done();
+      },
+    });
+  },
+};
+
+const reactContainer = document.getElementById('__react-content');
+
+const nestSubMenu = (
+  <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">SubMenu</SPAN>
+    <SPAN class="hljs-attribute">title</SPAN>=<SPAN class="hljs-value">{</SPAN>
+      &lt;<SPAN class="hljs-attribute">span</SPAN> <SPAN class="hljs-attribute">className</SPAN>=<SPAN class="hljs-value">"submenu-title-wrapper"</SPAN>&gt;</SPAN>offset sub menu 2<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">span</SPAN>&gt;</SPAN>
+    }
+    key="4"
+    popupOffset={[10, 15]}
+  &gt;
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"4-1"</SPAN>&gt;</SPAN>inner inner<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">Divider</SPAN>/&gt;</SPAN>
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">SubMenu</SPAN>
+      <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"4-2"</SPAN>
+      <SPAN class="hljs-attribute">title</SPAN>=<SPAN class="hljs-value">{&lt;span</SPAN> <SPAN class="hljs-attribute">className</SPAN>=<SPAN class="hljs-value">"submenu-title-wrapper"</SPAN>&gt;</SPAN>sub menu 1<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">span</SPAN>&gt;</SPAN>}
+    &gt;
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">SubMenu</SPAN> <SPAN class="hljs-attribute">title</SPAN>=<SPAN class="hljs-value">{&lt;span</SPAN> <SPAN class="hljs-attribute">className</SPAN>=<SPAN class="hljs-value">"submenu-title-wrapper"</SPAN>&gt;</SPAN>sub 4-2-0<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">span</SPAN>&gt;</SPAN>} key="4-2-0"&gt;
+        <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"4-2-0-1"</SPAN>&gt;</SPAN>inner inner<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+        <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"4-2-0-2"</SPAN>&gt;</SPAN>inner inner2<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">SubMenu</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"4-2-1"</SPAN>&gt;</SPAN>inn<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">SubMenu</SPAN> <SPAN class="hljs-attribute">title</SPAN>=<SPAN class="hljs-value">{&lt;span</SPAN> <SPAN class="hljs-attribute">className</SPAN>=<SPAN class="hljs-value">"submenu-title-wrapper"</SPAN>&gt;</SPAN>sub menu 4<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">span</SPAN>&gt;</SPAN>} key="4-2-2"&gt;
+        <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"4-2-2-1"</SPAN>&gt;</SPAN>inner inner<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+        <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"4-2-2-2"</SPAN>&gt;</SPAN>inner inner2<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">SubMenu</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">SubMenu</SPAN> <SPAN class="hljs-attribute">title</SPAN>=<SPAN class="hljs-value">{&lt;span</SPAN> <SPAN class="hljs-attribute">className</SPAN>=<SPAN class="hljs-value">"submenu-title-wrapper"</SPAN>&gt;</SPAN>sub menu 3<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">span</SPAN>&gt;</SPAN>} key="4-2-3"&gt;
+        <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"4-2-3-1"</SPAN>&gt;</SPAN>inner inner<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+        <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"4-2-3-2"</SPAN>&gt;</SPAN>inner inner2<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">SubMenu</SPAN>&gt;</SPAN>
+    <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">SubMenu</SPAN>&gt;</SPAN>
+  <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">SubMenu</SPAN>&gt;</SPAN>
+);
+
+function onOpenChange(value) {
+  console.log('onOpenChange', value);
+}
+
+const children1 = [
+  <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">SubMenu</SPAN> <SPAN class="hljs-attribute">title</SPAN>=<SPAN class="hljs-value">{&lt;span</SPAN> <SPAN class="hljs-attribute">className</SPAN>=<SPAN class="hljs-value">"submenu-title-wrapper"</SPAN>&gt;</SPAN>sub menu<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">span</SPAN>&gt;</SPAN>} key="1"&gt;
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"1-1"</SPAN>&gt;</SPAN>0-1<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"1-2"</SPAN>&gt;</SPAN>0-2<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+  <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">SubMenu</SPAN>&gt;</SPAN>,
+  nestSubMenu,
+  <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"2"</SPAN>&gt;</SPAN>1<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>,
+  <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"3"</SPAN>&gt;</SPAN>outer<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>,
+  <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"5"</SPAN> <SPAN class="hljs-attribute">disabled</SPAN>&gt;</SPAN>disabled<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>,
+  <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"6"</SPAN>&gt;</SPAN>outer3<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>,
+];
+
+const children2 = [
+  <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">SubMenu</SPAN> <SPAN class="hljs-attribute">title</SPAN>=<SPAN class="hljs-value">{&lt;span</SPAN> <SPAN class="hljs-attribute">className</SPAN>=<SPAN class="hljs-value">"submenu-title-wrapper"</SPAN>&gt;</SPAN>sub menu<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">span</SPAN>&gt;</SPAN>} key="1"&gt;
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"1-1"</SPAN>&gt;</SPAN>0-1<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"1-2"</SPAN>&gt;</SPAN>0-2<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>
+  <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">SubMenu</SPAN>&gt;</SPAN>,
+  <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"2"</SPAN>&gt;</SPAN>1<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>,
+  <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">MenuItem</SPAN> <SPAN class="hljs-attribute">key</SPAN>=<SPAN class="hljs-value">"3"</SPAN>&gt;</SPAN>outer<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">MenuItem</SPAN>&gt;</SPAN>,
+];
+
+const customizeIndicator = <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">span</SPAN>&gt;</SPAN>Add More Items<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">span</SPAN>&gt;</SPAN>;
+
+class CommonMenu extends React.Component {
+  state={
+    children: children1,
+    overflowedIndicator: undefined,
+  }
+  toggleChildren = () =&gt; {
+    this.setState({
+      children: this.state.children === children1 ? children2 : children1,
+    });
+  }
+  toggleOverflowedIndicator = () =&gt; {
+    this.setState({
+      overflowedIndicator:
+        this.state.overflowedIndicator === undefined ?
+          customizeIndicator :
+          undefined,
+    });
+  }
+  render() {
+    const { triggerSubMenuAction } = this.props;
+    const { children, overflowedIndicator } = this.state;
+    return (
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>
+        {this.props.updateChildrenAndOverflowedIndicator &amp;&amp; <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>
+          <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">button</SPAN> <SPAN class="hljs-attribute">onClick</SPAN>=<SPAN class="hljs-value">{this.toggleChildren}</SPAN>&gt;</SPAN>toggle children<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">button</SPAN>&gt;</SPAN>
+          <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">button</SPAN> <SPAN class="hljs-attribute">onClick</SPAN>=<SPAN class="hljs-value">{this.toggleOverflowedIndicator}</SPAN>&gt;</SPAN>toggle overflowedIndicator<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">button</SPAN>&gt;</SPAN>
+        <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>}
+        <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">Menu</SPAN>
+          <SPAN class="hljs-attribute">onClick</SPAN>=<SPAN class="hljs-value">{handleClick}</SPAN>
+          <SPAN class="hljs-attribute">triggerSubMenuAction</SPAN>=<SPAN class="hljs-value">{triggerSubMenuAction}</SPAN>
+          <SPAN class="hljs-attribute">onOpenChange</SPAN>=<SPAN class="hljs-value">{onOpenChange}</SPAN>
+          <SPAN class="hljs-attribute">selectedKeys</SPAN>=<SPAN class="hljs-value">{['3']}</SPAN>
+          <SPAN class="hljs-attribute">mode</SPAN>=<SPAN class="hljs-value">{this.props.mode}</SPAN>
+          <SPAN class="hljs-attribute">openAnimation</SPAN>=<SPAN class="hljs-value">{this.props.openAnimation}</SPAN>
+          <SPAN class="hljs-attribute">defaultOpenKeys</SPAN>=<SPAN class="hljs-value">{this.props.defaultOpenKeys}</SPAN>
+          <SPAN class="hljs-attribute">overflowedIndicator</SPAN>=<SPAN class="hljs-value">{overflowedIndicator}</SPAN>
+        &gt;</SPAN>
+          {children}
+        <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">Menu</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>
+    );
+  }
+}
+
+CommonMenu.propTypes = {
+  mode: PropTypes.string,
+  openAnimation: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  triggerSubMenuAction: PropTypes.string,
+  defaultOpenKeys: PropTypes.arrayOf(PropTypes.string),
+  updateChildrenAndOverflowedIndicator: PropTypes.bool,
+};
+
+function render(container) {
+  const horizontalMenu = (
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">CommonMenu</SPAN>
+      <SPAN class="hljs-attribute">mode</SPAN>=<SPAN class="hljs-value">"horizontal"</SPAN>
+      // <SPAN class="hljs-attribute">use</SPAN> <SPAN class="hljs-attribute">openTransition</SPAN> <SPAN class="hljs-attribute">for</SPAN> <SPAN class="hljs-attribute">antd</SPAN>
+      <SPAN class="hljs-attribute">openAnimation</SPAN>=<SPAN class="hljs-value">"slide-up"</SPAN>
+    /&gt;</SPAN>
+  );
+
+  const horizontalMenu2 = (
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">CommonMenu</SPAN>
+      <SPAN class="hljs-attribute">mode</SPAN>=<SPAN class="hljs-value">"horizontal"</SPAN>
+      // <SPAN class="hljs-attribute">use</SPAN> <SPAN class="hljs-attribute">openTransition</SPAN> <SPAN class="hljs-attribute">for</SPAN> <SPAN class="hljs-attribute">antd</SPAN>
+      <SPAN class="hljs-attribute">openAnimation</SPAN>=<SPAN class="hljs-value">"slide-up"</SPAN>
+      <SPAN class="hljs-attribute">triggerSubMenuAction</SPAN>=<SPAN class="hljs-value">"click"</SPAN>
+      <SPAN class="hljs-attribute">updateChildrenAndOverflowedIndicator</SPAN>
+    /&gt;</SPAN>
+  );
+
+  const verticalMenu = (
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">CommonMenu</SPAN>
+      <SPAN class="hljs-attribute">mode</SPAN>=<SPAN class="hljs-value">"vertical"</SPAN>
+      <SPAN class="hljs-attribute">openAnimation</SPAN>=<SPAN class="hljs-value">"zoom"</SPAN>
+    /&gt;</SPAN>
+  );
+
+  const inlineMenu = (
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">CommonMenu</SPAN>
+      <SPAN class="hljs-attribute">mode</SPAN>=<SPAN class="hljs-value">"inline"</SPAN>
+      <SPAN class="hljs-attribute">defaultOpenKeys</SPAN>=<SPAN class="hljs-value">{['1']}</SPAN>
+      <SPAN class="hljs-attribute">openAnimation</SPAN>=<SPAN class="hljs-value">{animation}</SPAN>
+    /&gt;</SPAN>
+  );
+
+  ReactDOM.render(<SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">div</SPAN> <SPAN class="hljs-attribute">style</SPAN>=</SPAN></SPAN><SPAN class="hljs-expression">{{ <SPAN class="hljs-variable">margin</SPAN>: 20 }}</SPAN><SPAN class="xml"><SPAN class="hljs-tag">&gt;</SPAN>
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">h2</SPAN>&gt;</SPAN>antd menu<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">h2</SPAN>&gt;</SPAN>
+    <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">h3</SPAN>&gt;</SPAN>horizontal<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">h3</SPAN>&gt;</SPAN>
+
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">div</SPAN> <SPAN class="hljs-attribute">style</SPAN>=</SPAN></SPAN><SPAN class="hljs-expression">{{ <SPAN class="hljs-variable">margin</SPAN>: 20 }}</SPAN><SPAN class="xml"><SPAN class="hljs-tag">&gt;</SPAN>{horizontalMenu}<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">h3</SPAN>&gt;</SPAN>horizontal and click<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">h3</SPAN>&gt;</SPAN>
+
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">div</SPAN> <SPAN class="hljs-attribute">style</SPAN>=</SPAN></SPAN><SPAN class="hljs-expression">{{ <SPAN class="hljs-variable">margin</SPAN>: 20 }}</SPAN><SPAN class="xml"><SPAN class="hljs-tag">&gt;</SPAN>{horizontalMenu2}<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">h3</SPAN>&gt;</SPAN>vertical<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">h3</SPAN>&gt;</SPAN>
+
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">div</SPAN> <SPAN class="hljs-attribute">style</SPAN>=</SPAN></SPAN><SPAN class="hljs-expression">{{ <SPAN class="hljs-variable">margin</SPAN>: 20, <SPAN class="hljs-variable">width</SPAN>: 200 }}</SPAN><SPAN class="xml"><SPAN class="hljs-tag">&gt;</SPAN>{verticalMenu}<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">h3</SPAN>&gt;</SPAN>inline<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">h3</SPAN>&gt;</SPAN>
+
+      <SPAN class="hljs-tag">&lt;<SPAN class="hljs-title">div</SPAN> <SPAN class="hljs-attribute">style</SPAN>=</SPAN></SPAN><SPAN class="hljs-expression">{{ <SPAN class="hljs-variable">margin</SPAN>: 20, <SPAN class="hljs-variable">width</SPAN>: 400 }}</SPAN><SPAN class="xml"><SPAN class="hljs-tag">&gt;</SPAN>{inlineMenu}<SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>
+    <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>
+  <SPAN class="hljs-tag">&lt;/<SPAN class="hljs-title">div</SPAN>&gt;</SPAN>, container);
+}
+
+render(reactContainer);
+</SPAN></CODE></PRE></DIV>
+<SCRIPT>FastClick.attach(document.body);</SCRIPT>
+   
+<SCRIPT src="rc-menu-antd_files/antd.js"></SCRIPT>
+ </BODY></HTML>
